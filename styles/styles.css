@@ -1,0 +1,81 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#output{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#game{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+
+.color{
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    color: azure;
+}
+
+#green{
+    border-radius: 100% 0 0 0;
+    background: rgb(0, 255, 0, 0.8);
+}
+
+#red{
+    border-radius: 0 100% 0 0;
+    background: rgb(255, 30, 0, 0.8);        /*#AE0404*/
+}
+
+#yellow{
+    border-radius: 0 0 0 100%;
+    background: rgba(255, 255, 0, 0.8);
+}
+
+#blue{
+    border-radius: 0 0 100% 0;
+    background: rgb(41, 80, 255, 0.8);
+}
+.Button{
+    display: flex;
+    justify-content: center;
+}
+.buttons{
+    font-family: 'Ubuntu', sans-serif;
+    background: rgba(210, 238, 255, 0.8);
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 25px 0 0px;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgb(210, 238, 255);
+    transition: 0.5s;
+}
+.buttons:hover{
+    background: rgb(255, 255, 255)
+}
+footer{
+    color: rgb(233, 241, 255);
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.479);
+    position: fixed;
+    bottom: 0;
+}
