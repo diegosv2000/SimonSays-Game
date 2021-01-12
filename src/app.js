@@ -1,5 +1,5 @@
 // Se crean referencias para los cuatro pulsadores y demás elementos a fin de mejorar la legibilidad del código en los sucesivo..
-var pulsGreen = document.querySelector('#green'),
+let pulsGreen = document.querySelector('#green'),
     pulsRed = document.querySelector('#red'),
     pulsYellow = document.querySelector('#yellow'),
     pulsBlue = document.querySelector('#blue'),
@@ -28,8 +28,8 @@ var pulsGreen = document.querySelector('#green'),
 
 // Creamos la función Sleep para iniciar el contador de tiempo para seguir jugando
 function Sleep(milliseconds) {
-    var start = new Date().getTime();
-    for (var i = 0; i < 1e7; i++) {
+    let start = new Date().getTime();
+    for (let i = 0; i < 1e7; i++) {
         if ((new Date().getTime() - start) > milliseconds) {
         break;
         }
@@ -58,7 +58,7 @@ function startParty(){
     }
 
     function colorSequence(){
-        var colors = ['green', 'red', 'yellow', 'blue'];
+        let colors = ['green', 'red', 'yellow', 'blue'];
 
         sequence.push( colors[numRand(0,3)] );   // se añade un color aleatorio al final del array
     }
@@ -112,7 +112,7 @@ function startParty(){
         }
 
         function verifPuls(ev){
-            var button = ev.target;
+            let button = ev.target;
 
             if(button.id != 'game'){
                 if(button.id == sequence[indSeq]){       // Si se pulsa el pulsador correcto...
